@@ -13,8 +13,8 @@ Man kan sammenligne to flyttall med funksjonen Abs() fra pakken math.
 difference := math.Abs(a - b)
 ```
 Intuitivt virker dette bra, men en liten forskjell på verdien for to store
-tall, kan være en stor forskjell for to små tall. Metoden man bruker er at
-man bruker en relativ forskjell ved å dele differensane med den absolutte
+tall, kan være en stor forskjell for to små tall. Metoden man bruker er beregning
+av en relativ forskjell ved å dele differansen med den absolutte
 verdien til den andre input (b) => difference/math.Abs(b).
 Da blir funksjonen slik:
 ```
