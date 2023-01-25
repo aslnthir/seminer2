@@ -17,9 +17,8 @@ func init() {
   /*
     Her er eksempler på hvordan man implementerer parsing av flagg.
     For eksempel, kommando
-        funtemps -F -out C
+        funtemps -F 0 -out C
     skal returnere output: 0°F er -17.78°C
-    siden -F har standard verdi 0.0 i flagg-definisjonen under
   */
 
   flag.Float64Var(&fahr, "F", 0.0, "temperatur i grader fahrenheit")
@@ -50,7 +49,8 @@ func main() {
     disse tre kan brukes med -out, men ikke med -funfacts
     -funfacts kan brukes kun med -t
     ...
-
+    Jobb deg gjennom alle tilfellene. Vær obs på at det er en del sjekk
+    implementer i flag-pakken.
   */
 
   // Her er noen eksempler du kan bruke i den manuelle testingen
@@ -60,6 +60,13 @@ func main() {
   fmt.Println("flag.NFlag()", flag.NFlag())
 
   fmt.Println(isFlagPassed("out"))
+
+  // Eksempel på enkel logikk
+  if out == "C" && isFlagPassed("F") {
+    // Kalle opp funksjonen FahrenheitToCelsius(fahr), som da
+    // skal returnere °C
+    fmt.Println("0°F er -17.78°C")
+  }
 
 
 }
