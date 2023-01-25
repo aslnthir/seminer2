@@ -8,11 +8,11 @@ import (
 /*
 *
 
-	Mal for FunFacts funksjonen.
+	Mal for TestGetFunFacts funksjonen.
 	Definer korrekte typer for input og want,
-	og sette korrekte testverdier i slices tests.
+	og sette korrekte testverdier i slice tests.
 */
-func TestFunFacts(t *testing.T) {
+func TestGetFunFacts(t *testing.T) {
 	type test struct {
 		input // her må du skrive riktig type for input
 		want  // her må du skrive riktig type for returverdien
@@ -24,7 +24,7 @@ func TestFunFacts(t *testing.T) {
 	//}
 
 	for _, tc := range tests {
-		got := FunFacts(tc.input)
+		got := GetFunFacts(tc.input)
 		if !reflect.DeepEqual(tc.want, got) {
 			t.Errorf("expected: %v, got: %v", tc.want, got)
 		}

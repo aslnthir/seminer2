@@ -2,9 +2,9 @@ package funfucts
 
 /**
   Implementer funfacts-funksjon:
-    FunFacts(about string)
-    hvor about kan ha en av tre testverdier, -
-    sun, luna eller terra
+    GetFunFacts(about string)
+      hvor about kan ha en av tre testverdier, -
+        sun, luna eller terra
 
   Sett inn alle Funfucts i en struktur
   type FunFacts struct {
