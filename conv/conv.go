@@ -3,7 +3,7 @@ package conv
 /*
   I denne pakken skal alle konverteringfunksjonene
   implementeres. Bruk engelsk.
-    FarhrenheitToCelsius
+    FarhenheitToCelsius
     CelsiusToFahrenheit
     KelvinToFarhenheit
     ...

@@ -14,7 +14,7 @@ import (
 	kan du bruke malen som den er (du må selvsagt endre
 	funksjonsnavn og testverdier)
 */
-func TestFarenheitToCelsius(t *testing.T) {
+func TestFarhenheitToCelsius(t *testing.T) {
 	type test struct {
 		input float64
 		want  float64
@@ -25,7 +25,7 @@ func TestFarenheitToCelsius(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		got := FarenheitToCelsius(tc.input)
+		got := FarhenheitToCelsius(tc.input)
 		if !reflect.DeepEqual(tc.want, got) {
 			t.Errorf("expected: %v, got: %v", tc.want, got)
 		}

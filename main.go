@@ -76,7 +76,7 @@ func main() {
 }
 
 // Funksjonene sjekker om flagget er spesifisert på kommandolinje
-// Du trenger ikke bruke den, men den kan muligens hjelp i logikken
+// Du trenger ikke bruke den, men den kan muligens hjelpe med logikken
 func isFlagPassed(name string) bool {
 	found := false
 	flag.Visit(func(f *flag.Flag) {
