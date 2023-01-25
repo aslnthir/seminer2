@@ -7,7 +7,7 @@ import (
 
 /**
   Mal for FunFacts funksjonen.
-  Du definere korrekte typer for input og want,
+  Definer korrekte typer for input og want,
   og sette korrekte testverdier i slices tests.
 */
 func TestFunFacts(t *testing.T) {
@@ -16,6 +16,7 @@ func TestFunFacts(t *testing.T) {
         want // her må du skrive riktig type for returverdien
     }
 
+    // Her må du legge inn korrekte testverdier
     tests := []test{
       {input: , want: },
     }
