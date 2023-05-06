@@ -1,6 +1,6 @@
 # is105test
 Mal for oppgave "Testing".
-
+#TAhir was here ;)
 ## Notat angående testing av Float64
 Når man sammenlignet to verdier av typen float64, spiller presisjon er rolle.
 Alle reelle tall, representert i en datamaskin, har begrenset antall desimaler,
